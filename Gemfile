@@ -41,3 +41,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'rails-api'
 
 gem 'coffee-script-source', '1.8.0'
+
+gem 'active_model_serializers', '~> 0.9.3'
