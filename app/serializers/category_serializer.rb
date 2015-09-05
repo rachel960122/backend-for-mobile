@@ -8,10 +8,8 @@
 #  updated_at :datetime
 #
 
-require 'test_helper'
+class CategorySerializer < ActiveModel::Serializer
+  attributes :id, :name
 
-class CategoryTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  has_many :users
 end

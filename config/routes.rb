@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :categories, except: [:new, :edit]
   resources :messages, except: [:new, :edit]
 
   namespace :api do
     namespace :v1 do
-      resources :messages, :categories
+      resources :messages, :categories, :users
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

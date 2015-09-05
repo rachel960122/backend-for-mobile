@@ -43,3 +43,7 @@ gem 'rails-api'
 gem 'coffee-script-source', '1.8.0'
 
 gem 'active_model_serializers', '~> 0.9.3'
+
+gem 'annotate', '~> 2.6.10'
+
+gem 'devise', '~> 3.5.2'

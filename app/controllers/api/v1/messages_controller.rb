@@ -2,6 +2,7 @@ module Api
   module V1
     class MessagesController < ApplicationController
       before_action :set_message, only: [:show, :update, :destroy]
+      # before_action :authenticate_user!
 
       # GET /messages
       # GET /messages.json
