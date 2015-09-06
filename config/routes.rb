@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { sessions: "users/sessions", registrations: "users/registrations" }
   resources :categories, except: [:new, :edit]
   resources :messages, except: [:new, :edit]
 
@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       resources :messages, :categories, :users
     end
   end
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
